@@ -119,24 +119,35 @@ export default async function Home() {
             />
           </picture>
         </section>
-
-        <div className="w-[768px] md:w-[unset]">
-          <picture>
-            <source
-              srcSet="/images/sidekick-desktop-app-dark.png"
-              media="(prefers-color-scheme: dark)"
-            />
-            <Image
-              className="h-auto w-full md:max-w-[1024px] mx-auto"
-              src="/images/sidekick-desktop-app.png"
-              alt="home-hero"
-              width={1024}
-              height={640}
-              priority
-            />
-          </picture>
-        </div>
       </main>
+
+      <div className="px-4 w-full">
+        <div className="flex flex-col">
+          <h1 className="font-semibold text-3xl mb-4 text-center">
+            Technology
+          </h1>
+          <div className="flex flex-col md:flex-row lg:px-24 items-start justify-center gap-x-4">
+            <ul className="list-disc list-inside opacity-90 mt-3 w-2/3">
+              <p className="opacity-90">
+                This project is built with the following technologies:
+              </p>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Typescript</li>
+              <li>Clerk</li>
+              <li>Prisma</li>
+              <li>Mongo DB</li>
+            </ul>
+            <a
+              href="https://github.com/NexU20/notion-clone"
+              target="_blank"
+              className="bg-black inline-flex py-3 px-4 rounded-md w-fit max-w-36 mt-3"
+            >
+              View Repository
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
