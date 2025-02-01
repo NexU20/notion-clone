@@ -23,7 +23,7 @@ export const TipTapEditorExtensions = [
         return `Heading ${node.attrs.level}`;
       }
 
-      return "Press '/' for commands, or enter some text...";
+      return "Ketik '/' untuk melihat perintah";
     },
   }),
   SlashCommand,

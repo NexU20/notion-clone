@@ -121,7 +121,7 @@ export default async function Home() {
         </section>
       </main>
 
-      <div className="px-4 w-full">
+      <div className="px-4 w-full py-6">
         <div className="flex flex-col">
           <h1 className="font-semibold text-3xl mb-4 text-center">
             Technology
